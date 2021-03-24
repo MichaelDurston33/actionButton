@@ -1,0 +1,32 @@
+<template>
+    
+    <div class="nav-button-container" style={divAlignment}>
+        <!-- button -->
+        <button class={buttonStyling} onclick={clickMethod} title={text} data-event-data={eventData} disabled={disabled}>
+
+            <!-- Button Text-->
+            <span class="button-text" data-event-data={eventData}>{text}</span>
+
+            <!-- Button Icon -->
+            <template if:false={hideIcon}>
+
+                <!-- Regular Icon -->
+                <lightning-icon data-event-data={eventData} if:true={icon} tabindex="0" variant="inverse" class="icon" icon-name={icon} alternative-text={icon} title={icon} size="x-small"></lightning-icon>
+
+                <!-- Client Logo -->
+                <span class="icon" if:false={icon}>
+                    <!-- <c-rhodes-connect-logo
+                        width="30px"
+                        height="20px"
+                        colour={rhodesLogoColour}>
+                    </c-rhodes-connect-logo> -->
+                </span>
+
+            </template>
+
+
+        </button>
+
+    </div>
+
+</template>

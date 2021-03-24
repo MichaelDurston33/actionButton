@@ -1,0 +1,27 @@
+.navigation-button {
+    border-radius: 27px;
+    min-width: 170px;
+    height: 37px;
+    text-align: center;
+    border: none;
+    padding: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.icon {
+    margin-left: 20px;
+    transform: translateY(-6px);
+}
+
+.button-text {
+    display: inline-block;
+    max-width: 252px;
+    margin-top:1.5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
